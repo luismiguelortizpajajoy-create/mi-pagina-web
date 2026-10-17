@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Práctica - HTML Básico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mi Primera Página Web</h1>
+    <p>Actividad práctica de HTML</p>
+  </header>
+
+  <div class="foto">
+    <img src="img/12-400x250.jpg" alt="Foto de ejemplo">
+  </div>
+
+  <main>
+    <h2>Contenido</h2>
+    <p>
+      Este es el contenido principal de la página. Aquí se puede escribir
+      cualquier texto, como una descripción, una noticia o información
+      relevante sobre el tema de la página. Este bloque representa la
+      sección central del documento HTML.
+    </p>
+    <p>
+      El objetivo de esta actividad es reconocer la estructura básica de
+      una página web: encabezado, imagen, contenido y pie de página.
+    </p>
+
+    <h3>Video</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/dDjmd6FYBYQ?si=IL-wME4gDbhPXqBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <footer id="pie">
+    <p>&copy; 2026 Actividad Práctica - Todos los derechos reservados</p>
+  </footer>
+
+  <div id="resultado-eventos">
+    <strong>Último evento:</strong> <span id="salida">(ninguno todavía)</span>
+    <br><br>
+    <input type="text" id="campo-texto" placeholder="Escribe algo y presiona una tecla">
+    <br>
+    <button id="boton-prueba">Doble clic aquí</button>
+
+    <br><br>
+    <label for="color-select">Cambiar color del encabezado:</label>
+    <select id="color-select">
+      <option value="#2c3e50">Azul oscuro</option>
+      <option value="#c0392b">Rojo</option>
+      <option value="#27ae60">Verde</option>
+      <option value="#8e44ad">Morado</option>
+    </select>
+
+    <br><br>
+    <label>
+      <input type="checkbox" id="check-contenido">
+      Resaltar el contenido
+    </label>
+
+    <br><br>
+    <div id="caja-arrastrable" draggable="true">Arrástrame</div>
+    <div id="zona-soltar">Suéltame aquí</div>
+
+    <br>
+    <button id="boton-clic-derecho">Clic derecho aquí (menú contextual)</button>
+  </div>
+
+  <script src="scrip.js"></script>
+
+</body>
+</html>
